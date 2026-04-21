@@ -1,57 +1,287 @@
 
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Epson Support</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Verify Captcha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         body{
-            font-family: 'Poppins', sans-serif;
-            background-color: #f5f5f5;
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
         }
-        .headcp{
-            font-size: 13px;
-            margin-top: 100px;
-            line-height: 20px;
-            color: #000;
+        .eorkbdy{
+            padding: 20px 15%;
         }
-        .genig{
-            font-size: 12px;
-            color: #1976d2;
+        .forafter:before 
+        {
+            content:""; 
+            background: #c9c9c9; 
+            position: absolute; 
+            bottom: 0; 
+            right: 0; 
+            height: 100%; 
+            width: 1px;
+        }
+        .brdbttm{
+            border-bottom: 1px solid #c9c9c9;
+            padding-bottom: 20px;
+        }
+        .imgadj{
+            width: 29%;
+            margin-bottom: 10px;        
+        }
+        .linkdunld{
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .padding25{
+            padding: 25px;
+        }
+        .imgfeatr{
+            max-width: 100%;
+        }
+        .imgfeatr1{
+            max-width: 100%;
+            height: 300px;
+            margin-bottom: 30px;
+
+        }
+        .heading123{
+            font-weight: 400;
+        }
+        .pnhdkdhe{
+            font-weight: 600;
+            font-size: 22px;
+        }
+        .lnhrefbtn{
+            font-weight: 600;
+            background-color: #114284;
+        }
+        .sidenav {
+            height: 360px;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #ffffff;
+            overflow: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            border: 1px solid #c9c9c9;
+        }
+
+        .sidenav a {
+            text-decoration: none;
+            /* font-size: 25px; */
+            /* display: block; */
+            transition: 0.3s;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        .fxdbtnset{
             cursor: pointer;
-            margin-top: 10px;
-            margin-bottom: 20px;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: 600;
+            position: fixed;
+            right: -44px;
+            top: 40%;
+            background: #114284;
+            color: #fff;
+            transform: rotate(270deg);
+            z-index: 100;
         }
-        .btnstle{
-            margin-top: 20px;
+        .contentcllps{
+            padding: 20px;
+            padding-right: 40px;
+            text-align: center;
+        }
+        .imgqw2{
+            width: 100%;
+        }
+        .imgqw3{
+            width: 100%;
+        }
+        .imgqw4{
+            width: 100%;
+        }
+        .desk{
+            display: block;
+        }
+        .mob{
+            display: none;
+        }
+		.whitehsye{
+			color:#fff;
+		}
+        @media screen and (max-width: 991px) {
+            .eorkbdy {
+                padding: 20px 4%;
+            }
+                        .forafter:before 
+            {
+                content:""; 
+                background: none; 
+                position: absolute; 
+                bottom: 0; 
+                right: 0; 
+                height: 100%; 
+                width: 0px;
+            }
+            .foraftermob:before 
+            {
+                content:""; 
+                background: #ccc; 
+                position: absolute; 
+                bottom: 0; 
+                right: 0; 
+                height: 100%; 
+                width: 1px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .desk{
+                display: none;
+            }
+            .mob{
+                display: block;
+            }
+            .centrrcustm{
+                text-align: center;
+            }
+            .lnhrefbtn{
+                display: block;
+                width: 50%;
+                margin-left: 25%;
+            }
+
+        }
+        @media screen and (max-width: 450px) {
+            .sidenav 
+                {
+                    padding-top: 15px;
+                }
+                .sidenav a {
+                    font-size: 18px;
+                }
         }
     </style>
 </head>
 <body>
-        <div class="container">
-            <div class="row">
-                <div class="col m6 offset-m3 s12 valign-wrapper">
-                    <div class="center-align">
-                        <h5 class="headcp">Please enter the code from the image. Doing so helps prevent automated program from spamming the form or abuse this service</h5>
-                        <img src="https://i.ibb.co/WWBtsw68/captcha.png" alt="">
-                        <p class="genig">Generate new image</p>
-                        <div class="input-field col s12">
-                            <input id="captcha" type="text" class="validate">
-                            <label for="captcha">Enter Code</label>
-                        </div>
-                            <button class="btnstle btn waves-effect waves-light" type="submit" name="action">Submit
-                              <i class="material-icons right">send</i>
-                            </button>
-                    </div>  
+    <div class="container">
+        <div class="row">
+            <p class="fxdbtnset" onclick="openNav()">Customer Care</p>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="contentcllps">
+                    <h3 class="heading123 ">Facing Printer Issues?</h3>
+                    <p>Call for step by step guidance on how to setup, configure and register your printer.</p>
+                    <p class="pnhdkdhe">888-287-6747</p>
+                    <a class="btn btn-primary lnhrefbtn" href="tel:888-287-6747">Call Now</a>                
                 </div>
             </div>
         </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+    </div>
+
+    <div class="headerimg desk">
+        <img class="imgqw2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqUGgqssJ7scJJKoTCwPFeJSQ25tXQjeDaSKtPmiIhDyDzsVR69fhT8V6sUGyT9OdJJfIWDr8VG75aIUjz7bSKSCTlrWsAsG4HIS0efq_sMloYl2IwTti4xL2hx75H6S6FBlWepnHrOB4aEkJOfU6bFfOJB-gDfZMP81Szd-xNMj2vDtWy3u1z5g7qdMS5/s1356/head.png" alt="">
+    </div>
+    <div class="headerimg mob">
+        <img class="imgqw2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyKhTYNSowUQ_1NTPkTDM7ygxkHMOnhk4kX2JFS8-mX3qN5nlEr5yiudE2P23uvS8lIyHvHgWKjWVOXEr3a7eRNyZNW-OScQo6vjgkjixcY1X4-_jgZ52pO8XsEn4eOgI2S9vnC4b0ZQ9YvNBNT_ut9WPW5fhfyYfWYpWVS1omWA6iv24hUU7ZaHZBbN7g/s742/mobepsn.PNG" alt="">
+    </div>
+    <div class="eorkbdy">
+        <div class="row brdbttm">
+            <div class="col-md-3 col-xs-6 forafter foraftermob text-center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgf63J-zoVz2SAfsXGFCv_H3LwK0a10atFHmhc9E-cnZ0HpS18HkQFrMoSnqcDe-YNlE9R8E8ajPQ4jfa7dCW28d58MrQI3zRxkxNJ_AD1FxZCLqHAP4DP8INcvX8BEVqSKzEEEq-eENS54NNudpgBWKiF2PRxJbdUFLkzmnhVW9ptCSemMDHX-l1hFL8/s70/svg4.png" alt="" class="imgadj"><br>
+                <a href="javascript:void(Tawk_API.toggle())" class="linkdunld">Contact Support ></a><br>
+            </div>
+            <div class="col-md-3 col-xs-6 forafter  text-center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZPSaAmN81iERXwHmevJ4Z5haBQGRReYKvWGcL87W4wP37YGJTRk1z0ijJD8LIfmki1Y-glTD5A8rm2Im00SqqDMSLKXW5bLNuRBaztaldMFX3rdnU0e5pv0dAhHFIIIEDKr7vlm0ZP8Vq1lu5fn88zxRog500_vNRlEHMhveaCcbXd5we67n60cUdBxs/s70/svg3.png" alt="" class="imgadj"><br>
+                <a href="javascript:void(Tawk_API.toggle())" class="linkdunld">Check warranty status ></a><br>
+            </div>
+            <div class="col-md-3 col-xs-6 forafter foraftermob text-center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhByMFnjMAVTRx23yBuD0oiFSaCJPWLrNjzkqSd02HQZ5t-l8kSRQYLeBuYOYHfFsgLdBM-2QUsyGUarHreAp1HyGGfNMPZX4VKMQrlPY9Oxd3VbyQha-8lWnsCkWxM2dJAsdbWBJUxcwBf63wvo23FDNEUMZARaaTOgDVTnpIe6hxp2NO988K3wSN0uzA/s70/svg2.png" alt="" class="imgadj"><br>
+                <a href="javascript:void(Tawk_API.toggle())" class="linkdunld">Contact us ></a><br>
+            </div>
+            <div class="col-md-3 col-xs-6 text-center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpb2M1RywgxjdlM1l_Ftm589wNmDuF1vzLqqRqbNOGhGy3QFNzdtpn61WlhE6E_u36vtV9UIDRVB3GgvAz_uDqdwrrw14GHdYx37TFMJpBoovA6hF5UgDp6xjZu7ObSkOX6czDCxNV_5fPG1ZQcIKTYLYhm6-vsmMWwu32bjksrSwjoSp82fUpQ7zmz7Y/s63/svg1.png" alt="" class="imgadj"><br>
+                <a href="javascript:void(Tawk_API.toggle())" class="linkdunld">Ask our Virtual Assistant ></a><br>
+            </div>
+        </div>
+        <div class="row padding25 brdbttm">
+            <div class="col-sm-6 centrrcustm">
+                <img class="imgfeatr" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsMbI7cTzWUPpEqFgt9kLY0QuEVGjNMl4FLUBR6LnghQMPq_IH8PCZ_xxhbniT5RLnTLuG2X2ILBtqUDyuyQSf-j7J2Vd-q0gzVh6UuUkStemB1hOUkby69VfDc0eVQuGuU74Zphq3k14WYA-vW6uH839BIXNNsl8N_GleAxywx76Y0FzvvhawsCLqsAs/s470/feature.jpg" alt="">
+            </div>
+            <div class="col-sm-6 centrrcustm">
+                <h3 class="heading123">Epson Printer Customer Support</h3>
+                <p>Call or Chat for step by step guidance on how to setup, configure and register your printer.</p>
+                <p class="pnhdkdhe">888-287-6747</p>
+                <a class="btn btn-primary lnhrefbtn" href="javascript:void(Tawk_API.toggle())">Chat Now</a>
+                <br><br>
+                <p>More support options for this topic <span class="whitehsye">Call 888-287-6747</span></p>
+            </div>
+        </div>
+        <div class="row padding25 brdbttm text-center">
+            <div class="col-sm-4 col-xs-12">
+                <img class="imgfeatr1" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxGRPR3A-tDOWhlb9XT_LbFqDBwCJ8enBX_HfNZVe9mil_LvBsPeg1awVX-a6n1s2Lp0SRfg0Y47xi38bca-dtJScj0PXX-dpYxMpi59Z6VG-awWS1UnxQKkj6SlBPvr1h4BAvkNnbzf1YuJm7ijlfijxr1ZoY6Of66RKeVZ7yeqLSaZX0WPXRyh6szL8/s285/f1.PNG" alt="">
+                <a class="btn btn-primary lnhrefbtn" href="javascript:void(Tawk_API.toggle())">Chat Now</a>                
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <img class="imgfeatr1" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvk-OMoiAG9zA2FB7-aoBpD7s1KN3Gi0G5AvKbPlpHZiZu0MH2rAC9Vdw3_9kWQ_Thzd-Pkx72un0udphyphenhyphenCIDDQk8kNIibXalAXEAIP2vBnMpS6NmeEzMVgKQbq1N5346wkq04NQS8RDMEIbDiF-lC-_a-zUhp2-bPP_d90dO2FNbgx0D0ghwmqjrkYlc/s330/f2.PNG" alt="">
+                <a class="btn btn-primary lnhrefbtn" href="javascript:void(Tawk_API.toggle())">Chat Now</a>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <img class="imgfeatr1" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVtEAdtBYDxiZ9Ng37AowuXWM1P8JjqTdXkPSp5jgFCMM47fAqqBDTKWMedFJcHK4dmkzLPViyTfQnbgG3kO8zql_lIspyXulUCoMq2U7dMNjGuUHG7BTs9CHsFiW0ulzOk7MJ8OD7zedATMUPYn4gRxhTik1jJ1cEB3VhU-DR68ymF0WS6t9b-wFQ-_c/s334/f3.PNG" alt="">
+                <a class="btn btn-primary lnhrefbtn" href="javascript:void(Tawk_API.toggle())">Chat Now</a>
+            </div>
+        </div>
+        <div class="row padding25 text-center">
+            <img class="imgqw3" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlZ_N4MvuEpiDlPJDRUAcL0-QgxP9iFEi0DdCzXxp4quiz3EwlRiFhBQhJaEor0R9SD3qQrm9FQXXuvMG07GbHGIWeqU1WZRbbcqP9hBwVusy-ltIOScf8ebcZQS1We_grkJRZnLMYWyWIa-QpVV3xkzwk7EJGq1Tsun-dUkYkfaDpKIPPL2J3bqDqTW4/s970/PSF-21_Carousel.jpg" alt="">
+        </div>
+    </div>
+    <img class="imgqw4 desk" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrrWgi_IjFjyB3s_gyNt9aQ1EXHyYSGF0XEuLhM7ySDWTsNVtI8Cfhz3WFsNZT2nxGFyN0LHnnnvxvbHboNOIW5Z65m8I0FB_1rKqg43v5tUTM0UMzCmyJgakYj7cWEWgi5yEZYczfPBGcNS46UBU8hFmVVEhRfMYp_bQknfT8gx9u7LzAz8FoMsApLu4/s1358/footer.PNG" alt="">
+    <img class="imgqw4 mob" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZisSqvYdcmAQ_WoXcdmsW2aExYtvwuKvkqGTz6YblT4QP6IUIu8YnBgidZU8OqiOmKFbbK0cXrD6n_W53-0AZcbepigaS0pZ_DY84H9LgbJGrRY6AC_wPLmTUHcyOIG_Zhs-Rm9MdaiO1KwZ4t9syL6FImLpwpF5u-bl5hve4zSFBcbfgzcLWgY2pwOM/s492/footer%202.PNG" alt="">
 </body>
 </html>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "360px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<!-- Start of LiveChat (www.livechat.com) code -->
+<script>
+window.__lc = window.__lc || {};
+window.__lc.license = 16519608;
+window.__lc.integration_name = "manual_channels";
+window.__lc.product_name = "livechat";
+;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript><a href="https://www.livechat.com/chat-with/16519608/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- End of LiveChat code -->
